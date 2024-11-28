@@ -1,0 +1,70 @@
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.logo span {
+    color: #fdd835;
+}
+
+/* Barra de búsqueda */
+.barra-buscar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.barra-buscar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.barra-buscar button {
+    background-color: #fdd835;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.buscar {
+    width: 16px;
+    height: 16px;
+}
+
+.servicio {
+    text-align: right;
+    font-size: 1rem;
+    color: #333;
+}
+
+.servicio p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.servicio a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.servicio a:hover {
+    color: #fdd835;
+}
