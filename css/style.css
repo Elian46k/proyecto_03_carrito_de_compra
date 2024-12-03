@@ -12,3 +12,60 @@ body {
 .carrito{
     width: 25px;
 }
+
+#tres-im{
+    justify-content: center;
+    align-items: center;
+}
+
+/*beneficios*/
+#beneficios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#beneficios .bg-warning {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#beneficios div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 345px;
+}
+
+#beneficios div h4{
+    padding-left: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+}
+
+#beneficios div img{
+    width: 45px;
+}
+/*Fin de beneficios*/
+
+/*Inicio de categorias*/
+#cate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+
+#cate h2{
+    font-family: "Roboto", sans-serif;
+    padding-right: 20px;
+}
+
+.linea {
+    border-top: 2px dotted black;
+    width: 100%;
+    margin: 20px 0;
+    padding-right: 40px;
+}
