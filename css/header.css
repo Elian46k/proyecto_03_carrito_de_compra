@@ -98,13 +98,19 @@ header {
     background-color: #343a40;
 }
 
+/* #desp-cate{
+    width: 20%;
+} */
+
 .categoria {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     padding: 0 20px;
     color: #fff;
     text-decoration: none;
+    width: 30%;
 }
 
 .categoria:hover {
