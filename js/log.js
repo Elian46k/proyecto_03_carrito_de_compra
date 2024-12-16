@@ -1,11 +1,19 @@
-const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
-const loginBtn = document.getElementById('login');
+// Asegúrate de que el script se ejecute después de que el DOM esté completamente cargado
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById('container');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
 
-registerBtn.addEventListener('click', () => {
-    container.classList.add("active");
-});
+    // Verifica que los elementos existan antes de agregar los eventos
+    if (container && registerBtn && loginBtn) {
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
 
-loginBtn.addEventListener('click', () => {
-    container.classList.remove("active");
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+    } else {
+        console.error("Algunos elementos no se encontraron en el DOM. Verifica los IDs.");
+    }
 });

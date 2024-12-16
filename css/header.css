@@ -114,7 +114,7 @@ header {
 }
 
 .categoria:hover {
-    color: black;
+    color: black !important;
 }
 
 .categoria h6 {
@@ -124,6 +124,36 @@ header {
 .img-menu, .img-derecha {
     width: 20px;
     height: auto;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    /* z-index: 100; */
+}
+
+.submenu a{
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+    color: rgb(40, 38, 38) !important;
+    text-decoration: none;
+    width: 100%;
+}
+
+.submenu a:hover {
+    background-color: #fdd835;
+    color: black;
+}
+
+.categoria:hover + nav .submenu {
+    display: flex;
 }
 
 #nav-arriba ul {
@@ -150,28 +180,4 @@ header {
     width: 24px;
     height: auto;
     margin-left: 15px;
-}
-
-@media (max-width: 768px) {
-    #pre-encabezado {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-
-    .barra-buscar {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    #nav-arriba {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-    }
-
-    #nav-arriba ul {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
 }
